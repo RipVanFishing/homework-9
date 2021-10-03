@@ -168,23 +168,21 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: red;
-  max-width: 479px;
 }
 
-@media screen and (min-width: width 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
 
-@media screen and (min-width: width 768px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 767px;
+    width: 768px;
   }
 }
 
-@media screen and (min-width: width 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -645,32 +643,73 @@ ul {
   padding-top: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-properties {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .section-properties__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 0;
   padding-left: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .section-properties__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .section-properties__item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.section-properties__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 480px) {
+  .section-properties__item {
+    width: 450px;
+    height: 226px;
+    margin-bottom: 30px;
+  }
+}
+
+.section-properties__icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 768px) {
+  .section-properties__icon-wrap {
+    width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-properties__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-properties__subtitle {
@@ -827,7 +866,7 @@ ul {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: width 1200px) {
+@media screen and (max-width: 1199px) {
   .about-us {
     display: none;
   }
