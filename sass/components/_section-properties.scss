@@ -1,0 +1,42 @@
+.properties-title {
+  margin: 0;
+}
+
+.section-properties {
+  background-color: $mainColor;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  &__list {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: $accentBgc;
+    margin-bottom: 30px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $contactColor;
+  }
+}

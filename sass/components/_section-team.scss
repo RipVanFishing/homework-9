@@ -1,0 +1,53 @@
+.section-team {
+  background-color: $accentBgc;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__list {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__item {
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  &__card-content {
+    text-align: center;
+    padding: 30px 32px;
+    background-color: $mainColor;
+  }
+  &__icon-thumb {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $contactColor;
+  }
+}

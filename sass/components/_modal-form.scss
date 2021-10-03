@@ -1,0 +1,158 @@
+@import '../utils/variables';
+.visually-hidden {
+  @extend %hidden;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  &__field {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+  }
+  &__field:focus-within > &__icon {
+    fill: $accentColor;
+  }
+  &__field:focus-within > &__input {
+    border-color: $accentColor;
+    outline: none;
+  }
+  &__input {
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__label {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $contactColor;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translateY(-50%);
+  }
+  &__label-area {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+  &__label-area:focus-within > &__area {
+    border-color: $accentColor;
+    outline: none;
+  }
+  &__area {
+    display: block;
+    height: 120px;
+    width: 448px;
+    padding: 12px 16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__area::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &__text {
+    position: absolute;
+    top: -18px;
+    left: 0;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $colorDarkgrey;
+  }
+  &__check {
+    position: relative;
+    margin-left: auto;
+    margin-right: 51px;
+    margin-bottom: 30px;
+  }
+  &__input-check ~ &__icon-check {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input-check:checked ~ &__icon-check {
+    background-color: $accentColor;
+    fill: $accentColor;
+    background-image: url(.../images/icons/close.svg);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__check {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $colorDarkgrey;
+  }
+  &__link {
+    color: $accentColor;
+  }
+  &__icon-check {
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    transform: translateY(-50%);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  &__button {
+    background-color: $accentColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 200px;
+    height: 50px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: $mainColor;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__button:hover,
+  &__button:focus {
+    background-color: #188ce8;
+  }
+}
