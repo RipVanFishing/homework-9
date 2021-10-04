@@ -225,19 +225,31 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-  .page-header__menu-button {
+  .menu-button {
     display: block;
-    border: transparent;
-    background-color: #ffffff;
+    border: none;
+    background-color: transparent;
     width: 40px;
     height: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .page-header__menu-button {
+  .menu-button {
     display: none;
   }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .header-nav {
