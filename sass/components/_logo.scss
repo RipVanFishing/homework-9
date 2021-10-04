@@ -11,6 +11,12 @@
     color: $mainColor;
     margin-left: auto;
   }
+  &__footer--mobile {
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   &__header {
     color: $brandColor;
   }

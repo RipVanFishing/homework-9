@@ -1179,10 +1179,29 @@ ul {
           align-items: baseline;
 }
 
+@media screen and (max-width: 767px) {
+  .page-footer__wrapper {
+    display: block;
+  }
+}
+
 .page-footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer__address-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
+  }
 }
 
 .page-footer__text {
@@ -1206,8 +1225,22 @@ ul {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .page-footer__subtitle {
+    text-align: center;
+  }
+}
+
 .page-footer__contact {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer__contact {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .page-footer__list {
@@ -1250,8 +1283,19 @@ ul {
   margin-left: 70px;
 }
 
-.page-footer__submit-wrapper {
-  margin-left: 93px;
+@media screen and (max-width: 767px) {
+  .page-footer__social-wrap {
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__submit-wrapper {
+    margin-left: 93px;
+  }
 }
 
 .page-footer__submit-text {
@@ -1264,10 +1308,22 @@ ul {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .page-footer__submit-text {
+    text-align: center;
+  }
+}
+
 .page-footer__signup-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer__signup-form {
+    display: block;
+  }
 }
 
 .page-footer__area-email {
@@ -1283,6 +1339,15 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: white;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer__area-email {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .page-footer__submit-button {
@@ -1311,6 +1376,13 @@ ul {
   border: transparent;
 }
 
+@media screen and (max-width: 767px) {
+  .page-footer__submit-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .page-footer__icon-send {
   margin-left: 10px;
 }
@@ -1328,6 +1400,13 @@ ul {
 .main-logo__footer {
   color: #ffffff;
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .main-logo__footer--mobile {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .main-logo__header {
