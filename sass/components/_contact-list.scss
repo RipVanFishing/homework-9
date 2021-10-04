@@ -1,4 +1,7 @@
 .contact-list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: flex;
   margin-left: 305px;
   padding-left: 0;
@@ -13,8 +16,8 @@
     font-size: 14px;
     line-height: 1.17;
     text-decoration: none;
-    color: var(--contact-color);
-    fill: var(--contact-color);
+    color: $contactColor;
+    fill: $contactColor;
     letter-spacing: 0.02em;
   }
   &__link {
