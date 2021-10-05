@@ -43,22 +43,19 @@
                         </svg> +38 096 111 11 11 </a>
                 </li>
             </ul>
-            <button type="button" class="menu-button is-open"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button>
-            <svg aria-label="Переключатель мобильного меню"
-              width="24" height="16">
-                <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
-                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-                
-            </svg>
-
-            <div class="menu-container">
-                
-            </div>
-            </button>
-        </div>
+        <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg  width="24" height="16">
+               <use href="./images/icons.svg#icon-menu"></use>
+             </svg>
+        </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg  width="24" height="16">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+        </div> 
+    </div>   
     </header>
 
     <main>
@@ -428,7 +425,10 @@
             </div>  
         </div>
     </footer>
-    <script src="./JS/menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./JS/mobile-menu.js"></script>
     <script src="./JS/modal.js"></script>
 </body>
 
