@@ -2,14 +2,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: $mainColor;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+&.is-open {
   transform: translateX(0);
+}

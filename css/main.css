@@ -203,7 +203,6 @@ ul {
 }
 
 .page-header {
-  position: relative;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -239,20 +238,6 @@ ul {
   .menu-button {
     display: none;
   }
-}
-
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background-color: #ffffff;
-}
-
-.menu-container.is-open {
-  display: block;
 }
 
 .header-nav {
@@ -413,6 +398,27 @@ ul {
 .hero-section__button:hover, .hero-section__button:focus {
   background-color: #188ce8;
   color: #ffffff;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  background-color: #3f51b5;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .modal-section {
