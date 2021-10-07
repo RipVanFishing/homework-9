@@ -8,7 +8,8 @@ display: flex;
   margin-top: 0;
   &__item {
     @media screen and (min-width:$tablet) and (max-width:1199px) {
-      flex-basis: calc((100%-15px*4)/2);
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
     }
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -62,10 +63,12 @@ display: flex;
     margin-bottom: 4px;
   }
   &__container-text {
+    
     margin: 0;
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+    
   }
   &__thumb {
     position: relative;
