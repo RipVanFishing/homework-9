@@ -1,14 +1,26 @@
+.container {
+  @extend %container; 
+}
 .section-filter {
   background-color: $mainColor;
   padding-top: 94px;
   padding-bottom: 94px;
   &__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     margin-top: 0;
     padding-left: 0;
+    @media screen and (min-width:$tablet) {
+      justify-content: center; 
+    }
   }
+  &__item:nth-child(n+4) { 
+    @media screen and (max-width:767px) {
+    margin-top: 15px; 
+  }
+}
+
   &__item:not(:last-child) {
     margin-right: 8px;
   }

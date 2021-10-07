@@ -22,6 +22,14 @@
     min-height: 581px;
     background-color: $mainColor;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width:480px) {
+      min-width: 450px;
+      min-height: 609px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
   }
 
   &.is-hidden {

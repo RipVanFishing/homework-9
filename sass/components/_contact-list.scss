@@ -2,20 +2,36 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (max-width:1199px) {
+    margin-left: 84px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width:$desktop) {
+    margin-left: 305px;
+  }
   display: flex;
-  margin-left: 305px;
   padding-left: 0;
   &__item {
     display: block;
   }
   &__item:last-child {
-    margin-left: 30px;
+    @media screen and (max-width:1199px) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width:$desktop) {
+  margin-left: 30px; }
   }
   &__link {
-    font-weight: 500;
-    font-size: 14px;
+    @media screen and (max-width:1199px){
+      font-size: 12px;
+    line-height: 1.16;
+    }
+    @media screen and (min-width:$desktop){
+      font-size: 14px;
     line-height: 1.17;
-    text-decoration: none;
+    }
+    font-weight: 500;
+   text-decoration: none;
     color: $contactColor;
     fill: $contactColor;
     letter-spacing: 0.02em;
