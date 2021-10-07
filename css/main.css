@@ -1419,6 +1419,13 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .page-footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -1435,6 +1442,12 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__address-box {
+    text-align: center;
   }
 }
 
@@ -1459,7 +1472,7 @@ a {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .page-footer__subtitle {
     text-align: center;
   }
@@ -1526,9 +1539,24 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__social-wrap {
+    margin-left: 165px;
+    margin-bottom: 102px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .page-footer__submit-wrapper {
     margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__submit-wrapper {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1542,7 +1570,7 @@ a {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .page-footer__submit-text {
     text-align: center;
   }
@@ -1557,6 +1585,13 @@ a {
 @media screen and (max-width: 767px) {
   .page-footer__signup-form {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__signup-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1580,6 +1615,13 @@ a {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__area-email {
+    width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -1611,6 +1653,13 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .page-footer__submit-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__submit-button {
     margin-left: auto;
     margin-right: auto;

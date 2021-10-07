@@ -5,6 +5,9 @@
   @media screen and (max-width: 767px) {
     display: block;
   }
+  @media screen and (min-width:$tablet) and (max-width:1199px) {
+    flex-wrap: wrap;
+  }
   display: flex;
   align-items: baseline;
 }
@@ -20,6 +23,9 @@
       flex-direction: column;
       margin-bottom: 60px;
     }
+    @media screen and (min-width:$tablet) and (max-width:1199px) {
+   text-align: center;
+    }
   }
   &__text {
     text-decoration: none;
@@ -33,7 +39,7 @@
   }
 
   &__subtitle {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       text-align: center;
     }
     font-weight: 700;
@@ -88,15 +94,24 @@
       margin-right: auto;
       margin-bottom: 60px;
     }
+    @media screen and (min-width:$tablet) and (max-width:1199px){
+      margin-left: 165px;
+      margin-bottom: 102px;
+    }
   }
 
   &__submit-wrapper {
     @media screen and (min-width: $desktop) {
       margin-left: 93px;
     }
+    @media screen and (min-width:$tablet) and (max-width:1199px) {
+      width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__submit-text {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       text-align: center;
     }
     font-weight: 700;
@@ -111,6 +126,10 @@
     @media screen and (max-width: 767px) {
       display: block;
     }
+    @media screen and (min-width:$tablet) and (max-width:1199px) {
+      flex-wrap: wrap;
+    
+    }
     display: flex;
   }
   &__area-email {
@@ -118,6 +137,10 @@
       display: block;
       margin-right: auto;
       margin-left: auto;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width:$tablet) and (max-width:1199px) {
+      width: 450px;
       margin-bottom: 20px;
     }
     background-color: transparent;
@@ -137,6 +160,10 @@
 
   &__submit-button {
     @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width:$tablet) and (max-width:1199px) {
       margin-left: auto;
       margin-right: auto;
     }
