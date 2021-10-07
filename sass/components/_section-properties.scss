@@ -23,6 +23,7 @@
     }
     margin-bottom: 0;
     padding-left: 0;
+    margin: -15px;
   }
   &__item {
     @media screen and (max-width: $mobile) {
@@ -38,6 +39,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 270px;
   }
   &__icon-wrap {
     @media screen and (max-width: $tablet) {
@@ -50,6 +52,11 @@
       height: 120px;
       margin-bottom: 30px;
     }
+    @media screen and (min-width:$desktop) {
+      width: 270px;
+      height: 120px;
+    }
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,11 +76,16 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
     @media screen and (min-width:$tablet) {
     margin-right: auto;
-    margin-left: 15px;
+    margin-left: 15px; 
+  }
+  @media screen and (min-width:$desktop) {
+    margin-left: 0;
+  }
     
-    }
+    
   }
   &__text {
     width: 354px;
