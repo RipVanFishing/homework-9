@@ -12,6 +12,11 @@
       margin: 15px;
       flex-basis: calc((100% - 2 * 30px) / 2);
     }
+
+    @media screen and (min-width:$tablet) and (max-width:1199px){
+    margin:15px;
+    flex-basis: calc((100% - 30px * 3) / 3 ); 
+  }
     width: 170px;
     height: 92px;
     border: 1px solid $iconColor;

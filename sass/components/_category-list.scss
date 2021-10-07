@@ -40,8 +40,9 @@ display: flex;
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   &__link {
+    display: flex;
     position: relative;
-    display: block;
+   flex-direction: column;
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -63,13 +64,14 @@ display: flex;
     margin-bottom: 4px;
   }
   &__container-text {
-    
+    flex-grow: 1;
     margin: 0;
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
     
   }
+
   &__thumb {
     position: relative;
     overflow: hidden;
